@@ -4,7 +4,7 @@ from crud import Crud
 
 def main():
 
-    usuario = Usuario('LolInHA LuZIana')
+    usuario = Usuario('LolInHA LUana')
 
     tarefas = Crud()
 
