@@ -30,7 +30,7 @@ class Crud(object):
         finally:
             self.con.desconectar()
 
-    """
+    """  
     #atualizar dados do banco
     def atualizarDados(self):
         print('\n...:: ATUALIZAR CLIENTE ::...')
@@ -38,10 +38,10 @@ class Crud(object):
 
         try:
             self.cursor.execute("SELECT * FROM tabela_mysql WHERE id = %s", (id_usu, ))
-
             print()
             for i in self.cursor:
                 print(f'Id: {i[0]}\nNome: {i[1]}\nIdade: {i[2]}')
+            #self.con.desconectar() - não sei se precisa mesmo, precisa testar
         except Exception as e:
             print("\nNão foi possível localizar usuário")
             print(e)

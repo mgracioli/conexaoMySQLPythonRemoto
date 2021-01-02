@@ -10,7 +10,7 @@ class Conexao(object):
                 host = "db4free.net", 
                 user = "michel_4_free", 
                 password = "2435136Mm13.",
-                #database = "banco_4_free" #esse comando só se usa quando eu já tenho o banco de dados criado lá pelo phpMyAdmin ou pelo MySQL, daí é só conectar a ele por esse comando e, nesse caso, nao preciso usar o comando: "USE db_my_sql_python" lá da linha 25
+                #database = "banco_4_free" #esse comando só se usa quando eu já tenho o banco de dados criado lá pelo phpMyAdmin ou pelo MySQL, daí é só conectar a ele por esse comando e, nesse caso, nao preciso usar o comando: "USE banco_4_free" lá da linha 38
             )
         except Exception as e:
             print('Não foi possível realizar a conexão com o banco de dados')
@@ -35,7 +35,7 @@ class Conexao(object):
             print(i)
         """
 
-        #informa que eu quero usar o banco de dados db_my_sql_python - esse comando é usado só para quando eu crio o banco de dados por aqui, se eu criar ele lá pelo phpMyAdmin ou pelo MySQL direto, nao precisa disso, é só fazer a conexão com o banco lá  na linha 9 
+        #informa que eu quero usar o banco de dados db_my_sql_python - esse comando é usado só para quando eu crio o banco de dados por aqui, se eu criar ele lá pelo phpMyAdmin ou pelo MySQL direto, nao precisa disso, é só fazer a conexão com o banco lá  na linha 13 
         self._cursor.execute("USE banco_4_free")
         
         #adicionar tabela ao banco de dados
