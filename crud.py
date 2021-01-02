@@ -33,7 +33,7 @@ class Crud(object):
     """  
     #atualizar dados do banco
     def atualizarDados(self):
-        print('\n...:: ATUALIZAR CLIENTE ::...')
+        print('\n..:: ATUALIZAR CLIENTE ::...')
         id_usu = input('\nInsira o ID do usuário: ')
 
         try:
