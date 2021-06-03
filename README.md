@@ -1,2 +1,2 @@
 # conexaoMySQLPythonRemoto
-Módulos para conexão MySQL e Python
+Módulos para conexão de banco MySQL remoto e Python
